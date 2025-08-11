@@ -1,0 +1,432 @@
+DCP - Start 16th Dec. 2024 
+
+Time : 7AM - 9AM IST - WeekDays.
+
+
+#######################
+Day 1 : 16th Dec. 2024
+#######################
+
+Introduction to DevOps ::::
+
+	What is DevOps ?
+	
+	
+SDLC - Software Development LifeCycle
+
+
+	
+Software Applications :
+
+	- Desktops Applications
+	- Web Applications
+	- Mobiles Applications
+	- Embedded Applications
+	
+IT :
+
+SDLC - Software Development LifeCycle
+
+	- Requirement Analysis 
+	- Design & Documentation 
+	- Code 
+	- Test 
+	- Implement to Production
+	- Maint. & Monitoring
+
+		- Desktops Applications
+			-> Super Market Billing System 
+					Functions/Modules 
+						-> Stock Management 
+						-> Bill Dashboard 
+						-> Payment 
+							- CASH / CARD Payment  ++ Online Payment & UPI Payment Mode
+						-> Billing 
+
+Waterfall Model :
+	- Top-Down Approach 
+	- It is Linear in fashion 
+	- For Monolith Applications
+	
+	- Requirement Analysis 				12 Months 
+	- Design & Documentation 
+	- Code 									6th Month 
+	- Test 
+	- Implement to Production
+	- Maint. & Monitoring
+	
+	
+AGILE Methodologies :
+
+	- Requirement Analysis 
+	- Design & Documentation 
+	- Code 
+	- Test 
+	- Implement to Production
+	- Maint. & Monitoring
+	
+		- Desktops Applications
+			-> Super Market Billing System 
+					Functions/Modules 		Called as Iterations 
+						-> Stock Management 
+						-> Bill Dashboard 
+						-> Payment 
+							- CASH / CARD Payment  ++ Online Payment & UPI Payment Mode
+						-> Billing
+						
+	Iteration 1 : Stock Management
+	
+		- Requirement Analysis 
+		- Design & Documentation 
+		- Code 
+		- Test 
+		- Implement to Production with proper Approvals 
+		- Maint. & Monitoring						
+		
+	Iteration 2 : Bill Dashboard 
+	
+		- Requirement Analysis 
+		- Design & Documentation 
+		- Code 
+		- Test 
+		- Implement to Production with proper Approvals 
+		- Maint. & Monitoring
+		
+	Iteration 3 : Billing
+	
+		- Requirement Analysis 
+		- Design & Documentation 
+		- Code 
+		- Test 
+		- Implement to Production with proper Approvals 
+		- Maint. & Monitoring
+		
+	Iteration nth : Payment
+	
+		- Requirement Analysis 
+		- Design & Documentation 
+		- Code 
+		- Test 
+		- Implement to Production with proper Approvals 
+		- Maint. & Monitoring
+		
+	
+	Using AGILE Methodologies, 
+	
+		We can able to achieve :
+			
+			- Continuous Development
+			- Continuous Integration 
+			- Continuous Testing 
+			- Continuous Delivery 
+				- Implement to Production with Manual Approvals
+				
+		We cannot achieve : 
+		
+			- Continuous Deployment 	
+				- Implement to Production without any Manual Approvals/Intervension
+				
+				
+				
+DevOps ::::
+
+	- DevOps is a Software Development Strategy, which promote collaboration between the Teams Development and Operations Team to achieve Continuous Development, Continuous Integration, Continuous Testing, Continuous Delivery, Continuous Deployment and Continuous Monitoring in more automated fashion.
+	
+	
+How to Implement DevOps ?
+
+	- Teams :
+	
+		- DevOps Teams  
+			- Infra-Structure Management Team 	- (Create/Config the servers)
+			- Application Development Team 
+			- Testing Team 
+			- Release Management Team
+			- Production Support 
+			- Production Monitoring Team 
+			- IT Security Team 
+			
+	- Environments :
+	
+		Non-Prod 												Production Environments
+	
+			- Dev Environment
+			- Build Environment
+			- Test Environments
+				- QA Test
+				- UAT Test				===============>			Production Servers
+				
+	- Application Architecture :
+	
+		- Monolith Application Architecture 
+			- Tightly Coupled 
+			- Here, the dependencies are tightly coupled.
+			
+		- Micro-Service Based Application Architecture
+			- Loosely Coupled Application Architecture
+			- Each and evey function/Module is considered as a Micro-Service
+			- Each Micro-Service can be independly developed and deployed.
+			- Used to achieve Continuous Deployment.
+			
+	DevOps Stages :
+	
+		- Continuous Development:
+			- It is the capability of Application Team to continuously develop the software products.
+			- Improve Developers' Productivity.
+			
+			Developers :
+				Role of Developers ?	
+					- Create Application Source Code.
+					- Test their Changes 
+					
+				- Create Source Code 
+				- Build the Source Code 	
+					- Process of Compiling the Source Code & Create Artifacts(Binaries - *.war/*.jar/*.dll/*.exc) 
+				- Perform Unit Testing 
+				- Promote the Changes to Further Testing Environments
+				- Send Email Notifications to Testing Teams 
+			
+			Using DevOps Approach :
+			
+				- Developers to Create Application Source Code.
+				- Save the Source Code in a Source Code Repository(GITHUB)
+				
+				Thru DevOps Process :
+				
+				Automate :
+				
+					- Build the Source Code 	
+						- Process of Compiling the Source Code & Create Artifacts(Binaries - *.war/*.jar/*.dll/*.exc) 
+					- Perform Unit Testing 
+					- Promote the Changes to Further Testing Environments
+					- Send Email Notifications to Testing Teams 				
+			
+			Tools :
+			
+				IDEs - Eclipse based IDEs, Visual Studio Code, Visual Studio, Pycharm
+				GIT/GitHub Repositories 
+			
+		
+		- Continuous Integration :
+			- It is the capability of Application Team to continuously Integrate the Code for further Testing without impacting other Changes.
+
+				Thru DevOps Process :
+				Automate :
+				
+					- Build the Source Code 	
+						- Process of Compiling the Source Code & Create Artifacts(Binaries - *.war/*.jar/*.dll/*.exc) 
+					- Perform Unit Testing 
+					- Promote the Changes to Further Testing Environments
+					- Send Email Notifications to Testing Teams 
+					
+			Tools :
+				IDEs - Eclipse based IDEs, Visual Studio Code, Visual Studio, Pycharm
+				GIT/GitHub Repositories		
+				Jenkins,Docker,Kubernetes,Ansible, JUnit
+				Build Tools : Maven/Gradle 
+				
+			
+		- Continuous Testing :
+			- It is the capability of Testing Team to continuously Test the Changes without impacting other Changes.
+			- Testing Tools 
+			
+				- JUnit, TestNG, Selenium 
+				- Jenkins 
+			
+		- Continuous Delivery/Deployment :
+		
+			- Both Continuous Delivery/Deployment are used to perform Production Release.
+			
+			- Continuous Delivery 
+				- This Process, expect Manual Approvals for Production Release 
+				- This might lead to Application Downtime during Production Release.
+
+				Eg.:  
+				
+				Banking Applications :
+				
+					Internet Banking/Credit Service 
+						- Opened a Production Release Window :
+							- 4Hrs to 6Hrs. - Non-Business Hours. 
+							- Should get manual approval from all stake holders 
+							- Prod Testing 
+							
+								During Prod Issues, 
+								
+									- Try to fix the Issue 
+									- else, rollback/revert
+
+								
+			- Continuous Deployment :
+			
+				- This Process, will not expect any Manual Approvals/Intervension for Production Release
+				- This can be achieved only with Micro-Service based Applications
+				- Production Implementation can achieved with ZERO Downtime.
+				
+				
+				Eg.:
+				
+				Amazon/Netflix/Facebook
+				
+					DevOps Strategy :
+					
+				www.amazon.com:
+				
+				signUp			--> Micro-Service1 - Developer1 - Independently, Create Source Code,Test, Release to Prod.
+				SignIn			--> Micro-Service2 - Developer2 - Independently, Create Source Code,Test, Release to Prod.
+				Search
+				Add to Cart
+				MakePayment 
+				Confirm Order 
+				Track
+				
+			Tools :
+				Jenkins,Docker,Kubernetes,Ansible
+				
+
+
+				
+		- Continuous Monitoring
+			
+	
+#######################
+Day 2 : 17th Dec. 2024
+#######################			 
+
+		- Continuous Monitoring
+		
+		- DevOps LifeCycle 
+		
+		- Version Control System Using Git.
+		
+		
+		
+		- Continuous Monitoring :
+		
+			- Infra-Structure Monitoring :
+			
+				--> Ensure the underlying Infra-Structure is available 24/7 to support the Application
+			
+				--> Owned by the Production Support/Monitoring Team.
+
+			
+				Tools :
+			
+					- Prometheus/Grafana/Dynatrace/Splunk
+					- Jenkins 
+					
+				CPU Utilization --> 75% 
+				Memory Utilization --> 70%
+			
+			- Application Monitoring :
+			
+				Tools :
+
+					- AppDynamics/DataDog
+				
+	
+
+		- Infra-Structure Management :
+			
+			- Infra-Structure Management Team 
+			
+				-> Provision/Create the IT Infra-Structure Resources
+				-> Configure the Resources
+				
+			Tools : 
+			
+				IAC Tools --> Infra-Structure As Code.
+				
+				- Terraform/Cloudformation/ARM  ==> Provision/Create the IT Infra-Structure Resources
+				
+				- Ansible/Chef/Puppet    ==> Configuration Management Tool 
+				
+				- Jenkins
+				
+				
+	
+	DevOps LifeCycle :::
+	
+		- Developer(Create Source Code)
+		- Save in a Source Code Repositories
+		- Application Build 
+		- Unit Testing 
+		- Promote the Changes to Test Environments
+		- Automated Testing 
+		- Promote the Changes to Production Environments
+		- Monitoring
+			- Feedback
+			
+			
+	DevOps Team :
+	
+		-> DevOps Associate --> Sr. DA 
+		-> DevOps Engg.		--> Sr. DE 
+		-> DevOps Lead 		--> Sr. DL 
+		-> DevOps Architect --> Sr. DArch
+		-> DevOps Consultant --> Sr. DC 
+		
+		
+		Waterfall,AGILE,DevOps,DevSecOps,SRE,GitOps,MLOps,AIOps,...........
+		
+		
+	Devops Tools :
+	
+		- Open-Source DevOps Tools :
+		
+			- git/jenkins/docker/kubernetes/ansible/terraform/prometheus/grafana
+			
+		- Managed-Services :
+		
+			- AWS 	-> AWS DevOps Services
+			- Azure -> Azure DevOps Services
+			
+			- GCP   -> GCP DevOps Tools/Services
+
+	DevOps ::::
+
+		- DevOps is a Software Development Strategy, which promote collaboration between the Teams Development and Operations Team to achieve Continuous Development, Continuous Integration, Continuous Testing, Continuous Delivery, Continuous Deployment and Continuous Monitoring in more automated fashion.
+
+	
+	Overall DevOps is all about :
+	
+		- People 
+		- Process/Strategy
+		- Tools 
+	
+	- Detailed DevOps Assessment 
+	
+	
+	- CI/CD --> Continuous Integration / Continuous Delivery/Deployment
+			CI/Cd 
+			CI/CD
+	
+	
+#######################
+Day 2 : 17th Dec. 2024
+#######################		
+
+Version Control System Using GIT ::: Source Code Repository(GITHUB)
+
+	Lab :::
+	
+	- Create AWS Cloud Free Tier Account - 12 Months 
+	
+		- Active Email_ID,Mobile_Number,Credit/Debit Card
+		
+		- Create Virtual Machines(EC2 Instances)
+		
+		
+	- Create GITHUB Account -- Maintain the Documents/Source Code
+	
+		https://github.com/
+	
+	- DockerHub Account 
+		
+			
+		
+
+
+
+
+
